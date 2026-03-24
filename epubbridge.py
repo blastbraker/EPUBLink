@@ -13,7 +13,7 @@ HTML_PAGE = """
     <title>EPUBBridge</title>
 </head>
 <body style="text-align:center; font-family:sans-serif;">
-    <h1>📚 EPUBBridge</h1>
+    <h1>EPUBBridge</h1>
     <p>Your book is ready</p>
     <a href="/download">
         <button style="padding:15px; font-size:18px;">Download EPUB</button>
@@ -49,7 +49,7 @@ def main():
     ip = get_local_ip()
     url = f"http://{ip}:8000"
 
-    print(f"\n📡 Hosting on: {url}\n")
+    print(f"\n Hosted: {url}\n")
 
     qr = qrcode.make(url)
     qr.print_ascii()
